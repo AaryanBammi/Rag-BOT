@@ -1,0 +1,327 @@
+# Gold facts for evaluation (Docs/eval.md §2.2).
+#
+# Each value is copied from the official document named in `source_doc` (a sources.yaml id).
+# `accept` lists equivalent forms an answer may use; `chunk_accept`, when present, is how the
+# document itself states the value (e.g. a bare table cell), used by retrieval and fact-recall checks. `doc_hash` is the document's content hash
+# when the value was labelled; the eval runner marks an entry stale when the document changes.
+#
+# verified: false means the value was extracted on 2026-10-27 while building Phase 1 and still
+# needs a person to confirm it against the document (eval.md: gold values are labelled by a
+# person). Set it to true after checking.
+#
+# status: deferred means the fact type is out of scope for now (riskometer, Decisions Log #22).
+# status: pending_source means the fact is only stated on a page that must be saved manually
+# (fetch: manual in sources.yaml); fill in the value after saving and ingesting that page.
+
+# --- Expense ratio, Direct plan (combined factsheet, "As On September 30, 2026") -------------
+hdfc-mid-cap.expense_ratio_direct:
+  value: "0.71%"
+  accept: ["0.71%", "0.71 %"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-small-cap.expense_ratio_direct:
+  value: "0.76%"
+  accept: ["0.76%", "0.76 %"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-large-cap.expense_ratio_direct:
+  value: "1.00%"
+  accept: ["1.00%", "1.0%", "1%"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-multi-cap.expense_ratio_direct:
+  value: "0.83%"
+  accept: ["0.83%", "0.83 %"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-elss-tax-saver.expense_ratio_direct:
+  value: "1.13%"
+  accept: ["1.13%", "1.13 %"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-silver-etf-fof.expense_ratio_direct:
+  value: "0.21%"
+  accept: ["0.21%", "0.21 %"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+
+# --- Exit load --------------------------------------------------------------------------------
+hdfc-mid-cap.exit_load:
+  value: "1.00% if redeemed/switched out within 1 year from allotment; nil after 1 year"
+  accept: ["1.00%", "1%"]
+  must_also_contain: ["1 year"]
+  source_doc: hdfc-mid-cap-fund_facts
+  doc_hash: 8fc963fc813503f959be2e56e86a58f1ff1e35303b5ddd4c0e370c707e5583fa
+  as_of: "2026-09-30"
+  verified: false
+hdfc-small-cap.exit_load:
+  value: "1.00% if redeemed/switched out within 1 year from allotment; nil after 1 year"
+  accept: ["1.00%", "1%"]
+  must_also_contain: ["1 year"]
+  source_doc: hdfc-small-cap-fund_facts
+  doc_hash: e78d58ecb1d13fb7223ae70010ce2d98e34c225bf6fc1dee2b84cd4d089330ec
+  as_of: "2026-09-30"
+  verified: false
+hdfc-large-cap.exit_load:
+  value: "1.00% if redeemed/switched out within 1 year from allotment; nil after 1 year"
+  accept: ["1.00%", "1%"]
+  must_also_contain: ["1 year"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-multi-cap.exit_load:
+  value: "1.00% if redeemed/switched out within 1 year from allotment; nil after 1 year"
+  accept: ["1.00%", "1%"]
+  must_also_contain: ["1 year"]
+  source_doc: hdfc-multi-cap-fund_facts
+  doc_hash: 4aaf4112a8aa89cc4dc36d1a47b1e1b7d9ec160c8b37cce7d2437a846c717cc6
+  as_of: "2026-09-30"
+  verified: false
+hdfc-elss-tax-saver.exit_load:
+  value: "Nil"
+  accept: ["nil", "no exit load"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-silver-etf-fof.exit_load:
+  value: "1% if redeemed/switched out within 15 days from allotment; nil on or after 15 days"
+  accept: ["1%", "1.00%"]
+  must_also_contain: ["15 days"]
+  source_doc: hdfc-silver-etf-fof-kim
+  doc_hash: 51188eda9877363e12ce5031d90a6be1ec51c39d339973abb9bb1ce109a37e2e
+  as_of: "2025-11-21"
+  # The September 2026 factsheet states the 15-day period but draws the percentage as a
+  # graphic, so the KIM (Nov 2025) is the text source. Re-check if the KIM is updated.
+  verified: false
+
+# --- Benchmark --------------------------------------------------------------------------------
+hdfc-mid-cap.benchmark:
+  value: "NIFTY MIDCAP 150 (TRI)"
+  accept: ["NIFTY MIDCAP 150", "Nifty Midcap 150"]
+  source_doc: hdfc-mid-cap-fund_facts
+  doc_hash: 8fc963fc813503f959be2e56e86a58f1ff1e35303b5ddd4c0e370c707e5583fa
+  as_of: "2026-09-30"
+  verified: false
+hdfc-small-cap.benchmark:
+  value: "BSE 250 Smallcap Index (TRI)"
+  accept: ["BSE 250 Smallcap", "BSE 250 SmallCap"]
+  source_doc: hdfc-small-cap-fund_facts
+  doc_hash: e78d58ecb1d13fb7223ae70010ce2d98e34c225bf6fc1dee2b84cd4d089330ec
+  as_of: "2026-09-30"
+  verified: false
+hdfc-large-cap.benchmark:
+  value: "NIFTY 100 Total Returns Index (TRI)"
+  accept: ["NIFTY 100", "Nifty 100"]
+  source_doc: hdfc-large-cap-fund_facts
+  doc_hash: 12f3b52e99030d6e10d2eee0e76584f40c6179905744ce525c6b369fda3dbcc0
+  as_of: "2026-09-30"
+  verified: false
+hdfc-multi-cap.benchmark:
+  value: "NIFTY500 Multicap 50:25:25 (TRI)"
+  accept: ["NIFTY500 Multicap 50:25:25", "Nifty 500 Multicap 50:25:25"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-elss-tax-saver.benchmark:
+  value: "NIFTY 500 Index (TRI)"
+  accept: ["NIFTY 500", "Nifty 500"]
+  source_doc: hdfc-elss-tax-saver-fund_facts
+  doc_hash: c43ceec371326a9e61c679e12125b406d775465dc8165c35b09a2b7e96922434
+  as_of: "2026-09-30"
+  verified: false
+hdfc-silver-etf-fof.benchmark:
+  value: "Domestic Prices of physical Silver (derived as per regulatory norms)"
+  accept: ["domestic price of physical silver", "domestic prices of physical silver"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+
+# --- Minimum application amount (KIM) ---------------------------------------------------------
+hdfc-mid-cap.min_application:
+  value: "Rs.100 and any amount thereafter"
+  accept: ["Rs.100", "Rs. 100", "₹100", "Rs 100"]
+  source_doc: hdfc-mid-cap-kim
+  doc_hash: 8c8281365e66c0ea50792cced6e0654d4c5c84888dea62391284de53e69f8a68
+  as_of: "2025-11-21"
+  verified: false
+hdfc-small-cap.min_application:
+  value: "Rs.100 and any amount thereafter"
+  accept: ["Rs.100", "Rs. 100", "₹100", "Rs 100"]
+  source_doc: hdfc-small-cap-kim
+  doc_hash: 4989021ea838833f9f80b2774a523743f14b4036c5177a740358305a68ffa876
+  as_of: "2025-11-21"
+  verified: false
+hdfc-large-cap.min_application:
+  value: "Rs.100 and any amount thereafter"
+  accept: ["Rs.100", "Rs. 100", "₹100", "Rs 100"]
+  source_doc: hdfc-large-cap-kim
+  doc_hash: e6e3957ccf39be337e77f5352555d568e2a9a7779e19c472c1d03ae8fa95be36
+  as_of: "2025-11-21"
+  verified: false
+hdfc-multi-cap.min_application:
+  value: "Rs.100 and any amount thereafter"
+  accept: ["Rs.100", "Rs. 100", "₹100", "Rs 100"]
+  source_doc: hdfc-multi-cap-kim
+  doc_hash: 9cda99d9638d0148d0492b89060ea2c4a72825f27fa5c0c7ce667fcc7f578123
+  as_of: "2025-11-21"
+  verified: false
+hdfc-elss-tax-saver.min_application:
+  value: "Rs. 500 and in multiples of Rs. 500 thereafter"
+  accept: ["Rs. 500", "Rs.500", "₹500", "₹ 500", "Rs 500"]
+  source_doc: hdfc-elss-tax-saver-kim
+  doc_hash: fa5514b9c1379982ac0ff9544fb84270512524b15b73e78caa0b529cadf8aef0
+  as_of: "2025-11-21"
+  verified: false
+hdfc-silver-etf-fof.min_application:
+  value: "Rs.100 and any amount thereafter"
+  accept: ["Rs.100", "Rs. 100", "₹100", "Rs 100"]
+  source_doc: hdfc-silver-etf-fof-kim
+  doc_hash: 51188eda9877363e12ce5031d90a6be1ec51c39d339973abb9bb1ce109a37e2e
+  as_of: "2025-11-21"
+  verified: false
+
+# --- Fund manager -----------------------------------------------------------------------------
+hdfc-mid-cap.fund_manager:
+  value: "Chirag Setalvad (since June 25, 2007)"
+  accept: ["Chirag Setalvad"]
+  source_doc: hdfc-mid-cap-fund_facts
+  doc_hash: 8fc963fc813503f959be2e56e86a58f1ff1e35303b5ddd4c0e370c707e5583fa
+  as_of: "2026-09-30"
+  verified: false
+hdfc-small-cap.fund_manager:
+  value: "Chirag Setalvad (since June 28, 2014)"
+  accept: ["Chirag Setalvad"]
+  source_doc: hdfc-small-cap-fund_facts
+  doc_hash: e78d58ecb1d13fb7223ae70010ce2d98e34c225bf6fc1dee2b84cd4d089330ec
+  as_of: "2026-09-30"
+  verified: false
+hdfc-large-cap.fund_manager:
+  value: "Rahul Baijal (since July 29, 2022)"
+  accept: ["Rahul Baijal"]
+  source_doc: hdfc-large-cap-fund_facts
+  doc_hash: 12f3b52e99030d6e10d2eee0e76584f40c6179905744ce525c6b369fda3dbcc0
+  as_of: "2026-09-30"
+  verified: false
+hdfc-multi-cap.fund_manager:
+  value: "Amar Kalkundrikar (since September 01, 2025)"
+  accept: ["Amar Kalkundrikar"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+hdfc-elss-tax-saver.fund_manager:
+  value: "Amar Kalkundrikar (since December 08, 2025)"
+  accept: ["Amar Kalkundrikar"]
+  source_doc: hdfc-elss-tax-saver-fund_facts
+  doc_hash: c43ceec371326a9e61c679e12125b406d775465dc8165c35b09a2b7e96922434
+  as_of: "2026-09-30"
+  verified: false
+hdfc-silver-etf-fof.fund_manager:
+  value: "Nandita Menezes (since March 29, 2025) and Arun Agarwal (since February 15, 2023)"
+  accept: ["Nandita Menezes", "Arun Agarwal"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+
+# --- ELSS lock-in -----------------------------------------------------------------------------
+hdfc-elss-tax-saver.lock_in:
+  value: "3 years from the date of allotment of the respective units"
+  accept: ["3 years", "three years"]
+  source_doc: hdfc-factsheet
+  doc_hash: a6764dd3fc9b1d1497185d1ea7f64159be57bd7c8eed93bc45748f36dbac2582
+  as_of: "2026-09-30"
+  verified: false
+general.elss_lock_in:
+  value: "ELSS has a lock-in period of 3 years"
+  accept: ["3 years", "three years"]
+  source_doc: amfi-categorization
+  doc_hash: 5c29361dff1189676fd134c7bb6fb7963942c8662d72fa44e29a7922233eecfa
+  as_of: null
+  verified: false
+
+# --- Minimum SIP (SAI, applies to all schemes) -------------------------------------------
+hdfc-mid-cap.min_sip:
+  value: "Rs. 100 (daily, weekly or monthly SIP; minimum 6 instalments), in multiples of Re. 1"
+  accept: ["Rs. 100", "Rs.100", "₹100", "₹ 100", "Rs 100"]
+  chunk_accept: ["Daily, Weekly & Monthly 100 6"]  # how the SAI table states it (retrieval checks)
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  # SAI table "minimum amount and minimum number of installments for SIP (under all Schemes
+  # except HDFC ELSS Tax saver)". The chunk is general (not scheme-tagged).
+  verified: false
+hdfc-small-cap.min_sip:
+  value: "Rs. 100 (daily, weekly or monthly SIP; minimum 6 instalments), in multiples of Re. 1"
+  accept: ["Rs. 100", "Rs.100", "₹100", "₹ 100", "Rs 100"]
+  chunk_accept: ["Daily, Weekly & Monthly 100 6"]  # how the SAI table states it (retrieval checks)
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  # SAI table "minimum amount and minimum number of installments for SIP (under all Schemes
+  # except HDFC ELSS Tax saver)". The chunk is general (not scheme-tagged).
+  verified: false
+hdfc-large-cap.min_sip:
+  value: "Rs. 100 (daily, weekly or monthly SIP; minimum 6 instalments), in multiples of Re. 1"
+  accept: ["Rs. 100", "Rs.100", "₹100", "₹ 100", "Rs 100"]
+  chunk_accept: ["Daily, Weekly & Monthly 100 6"]  # how the SAI table states it (retrieval checks)
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  # SAI table "minimum amount and minimum number of installments for SIP (under all Schemes
+  # except HDFC ELSS Tax saver)". The chunk is general (not scheme-tagged).
+  verified: false
+hdfc-multi-cap.min_sip:
+  value: "Rs. 100 (daily, weekly or monthly SIP; minimum 6 instalments), in multiples of Re. 1"
+  accept: ["Rs. 100", "Rs.100", "₹100", "₹ 100", "Rs 100"]
+  chunk_accept: ["Daily, Weekly & Monthly 100 6"]  # how the SAI table states it (retrieval checks)
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  # SAI table "minimum amount and minimum number of installments for SIP (under all Schemes
+  # except HDFC ELSS Tax saver)". The chunk is general (not scheme-tagged).
+  verified: false
+hdfc-silver-etf-fof.min_sip:
+  value: "Rs. 100 (daily, weekly or monthly SIP; minimum 6 instalments), in multiples of Re. 1"
+  accept: ["Rs. 100", "Rs.100", "₹100", "₹ 100", "Rs 100"]
+  chunk_accept: ["Daily, Weekly & Monthly 100 6"]  # how the SAI table states it (retrieval checks)
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  # SAI table "minimum amount and minimum number of installments for SIP (under all Schemes
+  # except HDFC ELSS Tax saver)". The chunk is general (not scheme-tagged).
+  verified: false
+hdfc-elss-tax-saver.min_sip:
+  value: "Rs. 500 in multiples of Rs. 500 (weekly or monthly SIP; minimum 6 instalments)"
+  accept: ["Rs. 500", "Rs.500", "₹500", "₹ 500", "Rs 500"]
+  must_also_contain: ["ELSS"]
+  source_doc: hdfc-sai
+  doc_hash: 4e7956f208542737684de55d3bac831a4fa1e736c761ff20a65aa3266dcc1f95
+  as_of: "2026-06-30"
+  verified: false
+
+# --- Pending: only stated on HDFC scheme or statement pages (fetch: manual) -----------------------------
+hdfc-mid-cap.riskometer: {value: null, status: deferred, source_doc: hdfc-mid-cap-scheme_page}
+hdfc-small-cap.riskometer: {value: null, status: deferred, source_doc: hdfc-small-cap-scheme_page}
+hdfc-large-cap.riskometer: {value: null, status: deferred, source_doc: hdfc-large-cap-scheme_page}
+hdfc-multi-cap.riskometer: {value: null, status: deferred, source_doc: hdfc-multi-cap-scheme_page}
+hdfc-elss-tax-saver.riskometer: {value: null, status: deferred, source_doc: hdfc-elss-tax-saver-scheme_page}
+hdfc-silver-etf-fof.riskometer: {value: null, status: deferred, source_doc: hdfc-silver-etf-fof-scheme_page}
+general.capital_gains_statement: {value: null, status: pending_source, source_doc: hdfc-capital-gain-statement}
+general.account_statement: {value: null, status: pending_source, source_doc: hdfc-request-statement}

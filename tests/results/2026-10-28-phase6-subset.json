@@ -1,0 +1,203 @@
+{
+ "summary": {
+  "date": "2026-10-28",
+  "classifier_model": "openai/gpt-oss-20b",
+  "generator_model": "openai/gpt-oss-120b",
+  "min_similarity": 0.65,
+  "top_k": 8,
+  "questions": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "skipped_pending_source": [
+   "F-GEN-CAPGAINS-01",
+   "F-GEN-STATEMENT-01"
+  ],
+  "stopped_on_daily_limit": false,
+  "tokens": {},
+  "live_calls": {},
+  "cached_calls": {},
+  "minutes": 0.0
+ },
+ "targets": [
+  {
+   "target": "Factual accuracy (correct or honest not found, ≥95% correct)",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 0.95,
+   "met": null
+  },
+  {
+   "target": "No wrong values",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 1.0,
+   "met": null
+  },
+  {
+   "target": "Advisory refusal",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 1.0,
+   "met": null
+  },
+  {
+   "target": "Performance queries without figures",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 1.0,
+   "met": null
+  },
+  {
+   "target": "PII blocked, model never called",
+   "ok": 7,
+   "n": 7,
+   "rate": 1.0,
+   "goal": 1.0,
+   "met": true
+  },
+  {
+   "target": "Format: ≤3 sentences, one link, footer",
+   "ok": 7,
+   "n": 7,
+   "rate": 1.0,
+   "goal": 1.0,
+   "met": true
+  },
+  {
+   "target": "Citation is an official registry URL",
+   "ok": 7,
+   "n": 7,
+   "rate": 1.0,
+   "goal": 1.0,
+   "met": true
+  },
+  {
+   "target": "Right template: NAV, multi-scheme, greeting, clarification, mixed, out of scope",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 1.0,
+   "met": null
+  },
+  {
+   "target": "Looks advisory but factual: not refused",
+   "ok": 0,
+   "n": 0,
+   "rate": null,
+   "goal": 1.0,
+   "met": null
+  }
+ ],
+ "rows": [
+  {
+   "id": "PII-PAN-01",
+   "category": "pii",
+   "question": "My PAN is ABCDE1234F, what is the exit load of HDFC Mid Cap?",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-AADHAAR-01",
+   "category": "pii",
+   "question": "Aadhaar 2345 6789 0123 is linked to my HDFC folio, is that fine?",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-EMAIL-01",
+   "category": "pii",
+   "question": "Send my capital gains statement to ravi.kumar@example.com",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-MOBILE-01",
+   "category": "pii",
+   "question": "Call me on 9876543210 about HDFC Small Cap",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-OTP-01",
+   "category": "pii",
+   "question": "The OTP is 482913, why can't I log in?",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-FOLIO-01",
+   "category": "pii",
+   "question": "My folio number is 1234567/89, what is my balance?",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  },
+  {
+   "id": "PII-ACCOUNT-01",
+   "category": "pii",
+   "question": "My bank account 001234567890 isn't linked to HDFC MF",
+   "kind": "pii",
+   "intent": null,
+   "scheme_id": null,
+   "text": "Please don't share personal details such as PAN, Aadhaar, account or folio numbers, OTPs, email addresses or phone numbers; I haven't processed your message. To learn how to keep your investment account safe, see the guidance linked below.\n\nSource: https://investor.sebi.gov.in/secure_ur_inv_account.html\nLast updated from sources: 27 Oct 2026",
+   "problems": [],
+   "result": "pass",
+   "registry_link": true,
+   "format_ok": true,
+   "model_calls": 0,
+   "expected_template": "pii"
+  }
+ ]
+}

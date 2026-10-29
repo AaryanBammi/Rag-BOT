@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HDFC MF Facts Assistant</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="disclaimer" role="note">Facts-only. No investment advice.</div>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Chats">
+      <button type="button" class="new-chat" id="new-chat">+ New chat</button>
+      <ul class="thread-list" id="thread-list"></ul>
+      <p class="sidebar-note" id="threads-error" hidden></p>
+    </aside>
+    <div class="scrim" id="scrim" hidden></div>
+
+    <main class="chat">
+      <header class="chat-header">
+        <button type="button" class="menu" id="menu" aria-label="Show chats" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <h1 id="chat-title">New chat</h1>
+      </header>
+
+      <section class="messages" id="messages" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <h2>Ask about HDFC Mutual Fund schemes</h2>
+          <p>I answer factual questions about six HDFC Mutual Fund schemes (Mid Cap, Small Cap, Large Cap,
+            Multi Cap, ELSS Tax Saver and Silver ETF Fund of Fund) using official HDFC MF, AMFI and SEBI
+            documents. Every answer links its source.</p>
+          <p class="examples-label">Try one of these:</p>
+          <div class="examples">
+            <button type="button" class="example">What is the expense ratio of HDFC Mid Cap Fund – Direct Growth?</button>
+            <button type="button" class="example">What is the lock-in period for HDFC ELSS Tax Saver Fund?</button>
+            <button type="button" class="example">How do I download my capital gains statement?</button>
+          </div>
+        </div>
+        <ol class="message-list" id="message-list"></ol>
+      </section>
+
+      <form class="composer" id="composer">
+        <div class="input-row">
+          <textarea id="input" rows="1" maxlength="1000" placeholder="Ask a factual question…"
+                    aria-label="Your question"></textarea>
+          <button type="submit" id="send">Send</button>
+        </div>
+        <p class="pii-note">Please don't share PAN, Aadhaar, account numbers, OTPs, email or phone numbers.</p>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

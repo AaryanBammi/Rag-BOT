@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local config and secrets
+.env
+
+# Generated data: keep the folder structure (.gitkeep), sources.yaml and manifest.json;
+# ignore downloads, parsed text, and the vector index (rebuilt by `python -m ingest`).
+data/raw/*
+data/clean/*
+data/index/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+!data/index/.gitkeep
+data/.manifest-*.json
+
+# Chat threads (user conversations, PII-free but private)
+data/threads.db*
+
+# Downloaded embedding models
+.cache/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Research embedding caches
+research/*.npy
+research/results.json
+research/embeddings*.html
+data/llm_cache/

@@ -1,0 +1,254 @@
+# Source registry: the only documents the assistant may ingest and cite.
+# See architecture.md §3.1. Every URL below is an official HDFC Mutual Fund, AMFI, or SEBI URL.
+# Groww URLs appear only as `groww_reference` (product context) and are never fetched or cited.
+#
+# Last verified: 2026-10-27
+#
+# Fields per source:
+#   type   scheme_page | sid | kim | fund_facts | factsheet | sai | amfi_education | sebi_education
+#          | amc_service | investor_safety | nav_feed
+#   url    citation link shown to users
+#   fetch  auto   - downloaded by the ingestion pipeline
+#          manual - host blocks automated downloads (www.hdfcfund.com returns 403); a person saves
+#                   the page from a browser into data/raw/manual/<id>.html before ingesting
+#          none   - citation link only, never ingested
+#   Scheme pages are `none` (citation links only). They are the only text source for the
+#   riskometer level (every PDF shows it as an image); riskometer answers are deferred
+#   (Decisions Log #22). To enable them later, set these to `manual` and save the pages.
+#   amfi_code  (schemes) AMFI scheme code of the Direct Plan - Growth Option, used to look up the
+#              latest NAV in the nav_feed file at question time (app/nav.py); never ingested
+#   multi_scheme  true when one document covers many schemes; the chunker keeps only the
+#                 sections for schemes in this registry and tags each chunk with its scheme_id
+#
+# Monthly documents (fund_facts, factsheet) move to a new URL each month. Update them when
+# HDFC publishes the next month's files (scheme pages link to the current Fund Facts; the
+# combined factsheet is listed at https://www.hdfcfund.com/mutual-funds/factsheets).
+
+schemes:
+  - id: hdfc-mid-cap
+    name: HDFC Mid Cap Fund – Direct Growth
+    amfi_code: 118989
+    aliases:
+      - HDFC Mid-Cap Opportunities Fund   # former name, per SID p1
+      - HDFC Mid Cap Opportunities
+      - HDFC Midcap
+      - HDFC Mid Cap
+    groww_reference: https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-mid-cap-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=lvZLv6TD_uI7sOzea0XCJmAfPcbIHPlw
+        fetch: auto
+      - type: fund_facts
+        url: https://files.hdfcfund.com/s3fs-public/Others/2026-10/Fund%20Facts%20-%20HDFC%20Mid%20Cap%20Fund.pdf?VersionId=Va3tXBLWjCD1QP3jFWDf_vjJLxJBLSM8
+        fetch: auto
+
+  - id: hdfc-small-cap
+    name: HDFC Small Cap Fund – Direct Growth
+    amfi_code: 130503
+    aliases:
+      - HDFC Smallcap
+      - HDFC Small Cap
+    groww_reference: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-small-cap-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=rbTT75dVxfveqoJCi245Uk3DVf_hTzal
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=pPEndNLX7BQsCy41dKIvauo_DlRvI59A
+        fetch: auto
+      - type: fund_facts
+        url: https://files.hdfcfund.com/s3fs-public/Others/2026-10/Fund%20Facts%20-%20HDFC%20Small%20Cap%20Fund.pdf?VersionId=iWqu9A2w1gN1nHQOrQR.9nEFQGVU346K
+        fetch: auto
+
+  - id: hdfc-large-cap
+    name: HDFC Large Cap Fund – Direct Growth
+    amfi_code: 119018
+    aliases:
+      - HDFC Top 100 Fund   # former name, per SID p1
+      - HDFC Top 100
+      - HDFC Largecap
+      - HDFC Large Cap
+    groww_reference: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-large-cap-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=XuOtUPPEfOmbQpuzxBMGCAdqsTmowMh4
+        fetch: auto
+      - type: fund_facts
+        url: https://files.hdfcfund.com/s3fs-public/Others/2026-10/Fund%20Facts%20-%20HDFC%20Large%20Cap%20Fund.pdf?VersionId=qHpgDCKsizGWZTAG6yB09V0P91EcrNw4
+        fetch: auto
+
+  - id: hdfc-silver-etf-fof
+    name: HDFC Silver ETF Fund of Fund – Direct Growth
+    amfi_code: 150737
+    aliases:
+      - HDFC Silver ETF FoF
+      - HDFC Silver FoF
+      - HDFC Silver Fund of Fund
+      - HDFC Silver ETF Fund of Fund
+    groww_reference: https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth
+    # No per-scheme Fund Facts PDF is published for this scheme; its monthly facts come from
+    # the combined factsheet under `general` (multi_scheme).
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-silver-etf-fund-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=tUuazf8jZNxE5GRGaSJ_65Inyc2WNY_T
+        fetch: auto
+
+  - id: hdfc-multi-cap
+    name: HDFC Multi Cap Fund – Direct Growth
+    amfi_code: 149368
+    aliases:
+      - HDFC Multicap
+      - HDFC Multi Cap
+    groww_reference: https://groww.in/mutual-funds/hdfc-multi-cap-fund-direct-growth
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-multi-cap-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=A3WBLevXQyFmc9kX1DLji0SAcbtD2Ue7
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=g9Qeaw_qQ8P4NxFIEO0BHqxg3KwGtH2S
+        fetch: auto
+      - type: fund_facts
+        url: https://files.hdfcfund.com/s3fs-public/Others/2026-10/Fund%20Facts%20-%20HDFC%20Multi%20Cap%20Fund.pdf?VersionId=x0drH7suS2e_WiZUjpv4GQ1pr3F6uCN_
+        fetch: auto
+
+  - id: hdfc-elss-tax-saver
+    name: HDFC ELSS Tax Saver Fund – Direct Plan Growth
+    amfi_code: 119060
+    aliases:
+      - HDFC TaxSaver   # former name, per SID p69
+      - HDFC Tax Saver
+      - HDFC ELSS
+      - HDFC ELSS Tax Saver
+      - HDFC ELSS - Tax Saver Fund
+    groww_reference: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+    sources:
+      - type: scheme_page
+        url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver-fund/direct
+        fetch: none
+      - type: sid
+        url: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025.pdf?VersionId=DungYvv2dhOQ1qZfNi4xvypECzXU_tEu
+        fetch: auto
+      - type: kim
+        url: https://files.hdfcfund.com/s3fs-public/KIM/2025-11/KIM%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025_0.pdf?VersionId=CWvBjiK_hIuApMLzaZJVRt17Sc6tmlog
+        fetch: auto
+      - type: fund_facts
+        url: https://files.hdfcfund.com/s3fs-public/Others/2026-10/Fund%20Facts%20-%20HDFC%20ELSS%20-%20Tax%20Saver%20Fund.pdf?VersionId=VTGpRMq3c30AZpD.dPdmmBIjJCmUTwFt
+        fetch: auto
+
+general:
+  # Combined monthly factsheet: expense ratio and minimum amounts for all schemes, and the
+  # only monthly source for HDFC Silver ETF Fund of Fund.
+  - id: hdfc-factsheet
+    type: factsheet
+    title: HDFC MF Factsheet - September 2026
+    url: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw
+    fetch: auto
+    multi_scheme: true
+
+  # Statement of Additional Information: covers all schemes. Source for minimum SIP amounts
+  # (Rs. 100 for all schemes except ELSS, Rs. 500 for ELSS) and statement/CAS rules.
+  - id: hdfc-sai
+    type: sai
+    title: HDFC MF - Statement of Additional Information (SAI)
+    url: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0
+    fetch: auto
+
+  # Statements and capital gains reports
+  - id: hdfc-request-statement
+    type: amc_service
+    title: HDFC MF - Request Statement
+    url: https://www.hdfcfund.com/services/additional-info/request-statement
+    fetch: manual
+  - id: hdfc-capital-gain-statement
+    type: amc_service
+    title: HDFC MF - How to Get a Capital Gain Statement
+    url: https://www.hdfcfund.com/learn/blog/how-get-capital-gain-statement-mutual-fund-schemes-india
+    fetch: manual
+
+  # AMFI investor education
+  - id: amfi-categorization
+    type: amfi_education
+    title: AMFI - Categorization of Mutual Fund Schemes
+    url: https://www.amfiindia.com/investor/knowledge-center-info?zoneName=CategorizationOfMutualFundSchemes
+    fetch: auto
+  - id: amfi-types
+    type: amfi_education
+    title: AMFI - Types of Mutual Fund Schemes
+    url: https://www.amfiindia.com/investor/knowledge-center-info?zoneName=TypesOfMutualFundSchemes
+    fetch: auto
+  - id: amfi-advantages
+    type: amfi_education
+    title: AMFI - Advantages of Investing in Mutual Funds
+    url: https://www.amfiindia.com/investor/knowledge-center-info?zoneName=AdvantagesOfInvestingInMutualFunds
+    fetch: auto
+
+  # SEBI investor education
+  - id: sebi-understanding-mf
+    type: sebi_education
+    title: SEBI - Understanding Mutual Funds
+    url: https://investor.sebi.gov.in/understanding_mf.html
+    fetch: auto
+  - id: sebi-riskometer
+    type: sebi_education
+    title: SEBI - Understanding the Riskometer
+    url: https://investor.sebi.gov.in/riskometer.html
+    fetch: auto
+  - id: sebi-exit-load
+    type: sebi_education
+    title: SEBI - Exit Load
+    url: https://investor.sebi.gov.in/exit_load.html
+    fetch: auto
+  - id: sebi-elss
+    type: sebi_education
+    title: SEBI - Equity-Linked Savings Scheme
+    url: https://investor.sebi.gov.in/elss.html
+    fetch: auto
+  - id: sebi-fund-of-fund
+    type: sebi_education
+    title: SEBI - Fund of Fund
+    url: https://investor.sebi.gov.in/fund_of_fund.html
+    fetch: auto
+  - id: sebi-mf-faqs
+    type: sebi_education
+    title: SEBI - FAQs for Mutual Fund Investors
+    url: https://www.sebi.gov.in/sebi_data/faqfiles/sep-2024/1727242783639.pdf
+    fetch: auto
+
+  # Latest NAV for every scheme, published by AMFI each business day. Looked up live by app/nav.py
+  # (decision D-06, revised 2026-10-28), so it is `none` here: never downloaded by ingestion.
+  - id: amfi-nav
+    type: nav_feed
+    title: AMFI - Daily NAV of all mutual fund schemes
+    url: https://portal.amfiindia.com/spages/NAVAll.txt
+    fetch: none
+
+  # Linked from the PII reply (decision D-05)
+  - id: sebi-secure-account
+    type: investor_safety
+    title: SEBI - Secure Your Investment Account
+    url: https://investor.sebi.gov.in/secure_ur_inv_account.html
+    fetch: auto

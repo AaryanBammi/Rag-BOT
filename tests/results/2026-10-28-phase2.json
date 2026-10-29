@@ -1,0 +1,738 @@
+{
+ "summary": {
+  "date": "2026-10-28",
+  "runs": 1,
+  "questions": 51,
+  "answered": 45,
+  "correct": 1.0,
+  "not_found": 0.0,
+  "incorrect": 0.0,
+  "errors": 0,
+  "deferred_correct_not_found": 0.0,
+  "responses_with_format_problems": 0
+ },
+ "runs": [
+  [
+   {
+    "id": "F-MIDCAP-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC Mid Cap Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The expense ratio for the Direct Plan is 0.71% per annum.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The expense ratio for the Direct Plan is 0.71% per annum.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC Small Cap Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The expense ratio for the Direct Plan of HDFC Small Cap Fund is 0.76%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The expense ratio for the Direct Plan of HDFC Small Cap Fund is 0.76%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-LARGECAP-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC Large Cap Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The expense ratio for the Direct Plan of HDFC Large Cap Fund is 1.00%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The expense ratio for the Direct Plan of HDFC Large Cap Fund is 1.00%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MULTICAP-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC Multi Cap Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The Direct Plan expense ratio is 0.83%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The Direct Plan expense ratio is 0.83%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC ELSS Tax Saver Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The expense ratio for the Direct Plan is 1.13%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The expense ratio for the Direct Plan is 1.13%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-SILVER-EXPENSE-RATIO-DIRECT-01",
+    "question": "What is the expense ratio of HDFC Silver ETF Fund of Fund – Direct Plan?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The expense ratio for the Direct Plan is 0.21%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The expense ratio for the Direct Plan is 0.21%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MIDCAP-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC Mid Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load is payable after 1 year.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load is payable after 1 year.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC Small Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load thereafter.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load thereafter.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-LARGECAP-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC Large Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load is payable after 1 year.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load is payable after 1 year.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MULTICAP-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC Multi Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "An exit load of 1.00% is payable if units are redeemed or switched out within 1 year from the date of allotment; no exit load applies after 1 year.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "An exit load of 1.00% is payable if units are redeemed or switched out within 1 year from the date of allotment; no exit load applies after 1 year.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-ELSS-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC ELSS Tax Saver Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load for HDFC ELSS Tax Saver Fund is Nil.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load for HDFC ELSS Tax Saver Fund is Nil.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-SILVER-EXIT-LOAD-01",
+    "question": "What is the exit load for HDFC Silver ETF Fund of Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl",
+    "footer": "21 Nov 2025",
+    "text": "An exit load of 1% of NAV is payable if units are redeemed or switched out within 15 days of allotment; no exit load applies after 15 days.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "An exit load of 1% of NAV is payable if units are redeemed or switched out within 15 days of allotment; no exit load applies after 15 days.",
+    "cited": {
+     "doc_id": "hdfc-silver-etf-fof-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-MIDCAP-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC Mid Cap Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd",
+    "footer": "21 Nov 2025",
+    "text": "The scheme benchmarks its performance to the NIFTY MIDCAP 150 (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The scheme benchmarks its performance to the NIFTY MIDCAP 150 (TRI).",
+    "cited": {
+     "doc_id": "hdfc-mid-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC Small Cap Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The HDFC Small Cap Fund tracks the BSE 250 Smallcap Index (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The HDFC Small Cap Fund tracks the BSE 250 Smallcap Index (TRI).",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-LARGECAP-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC Large Cap Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The scheme’s benchmark is the NIFTY 100 Total Returns Index (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The scheme’s benchmark is the NIFTY 100 Total Returns Index (TRI).",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MULTICAP-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC Multi Cap Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=A3WBLevXQyFmc9kX1DLji0SAcbtD2Ue7",
+    "footer": "21 Nov 2025",
+    "text": "The scheme’s benchmark is the Nifty 500 MULTICAP 50:25:25 (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=A3WBLevXQyFmc9kX1DLji0SAcbtD2Ue7\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The scheme’s benchmark is the Nifty 500 MULTICAP 50:25:25 (TRI).",
+    "cited": {
+     "doc_id": "hdfc-multi-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC ELSS Tax Saver Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "It tracks the NIFTY 500 Index (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "It tracks the NIFTY 500 Index (TRI).",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-SILVER-BENCHMARK-01",
+    "question": "Which benchmark index does HDFC Silver ETF Fund of Fund track?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The scheme tracks the Domestic Prices of physical Silver (derived as per regulatory norms).\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The scheme tracks the Domestic Prices of physical Silver (derived as per regulatory norms).",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MIDCAP-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC Mid Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd",
+    "footer": "21 Nov 2025",
+    "text": "The minimum investment amount is Rs. 100 and any amount thereafter.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum investment amount is Rs. 100 and any amount thereafter.",
+    "cited": {
+     "doc_id": "hdfc-mid-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC Small Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=rbTT75dVxfveqoJCi245Uk3DVf_hTzal",
+    "footer": "21 Nov 2025",
+    "text": "The minimum investment amount is Rs. 100 and any amount thereafter.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=rbTT75dVxfveqoJCi245Uk3DVf_hTzal\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum investment amount is Rs. 100 and any amount thereafter.",
+    "cited": {
+     "doc_id": "hdfc-small-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-LARGECAP-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC Large Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq",
+    "footer": "21 Nov 2025",
+    "text": "The minimum amount for purchase is Rs. 100 (and multiples of Rs. 1 thereafter).\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum amount for purchase is Rs. 100 (and multiples of Rs. 1 thereafter).",
+    "cited": {
+     "doc_id": "hdfc-large-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-MULTICAP-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC Multi Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=A3WBLevXQyFmc9kX1DLji0SAcbtD2Ue7",
+    "footer": "21 Nov 2025",
+    "text": "The minimum investment amount is Rs. 100 and any amount thereafter.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Multi%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=A3WBLevXQyFmc9kX1DLji0SAcbtD2Ue7\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum investment amount is Rs. 100 and any amount thereafter.",
+    "cited": {
+     "doc_id": "hdfc-multi-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC ELSS Tax Saver Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025.pdf?VersionId=DungYvv2dhOQ1qZfNi4xvypECzXU_tEu",
+    "footer": "21 Nov 2025",
+    "text": "The minimum application amount is Rs. 500, and subsequent purchases must be in multiples of Rs. 500.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025.pdf?VersionId=DungYvv2dhOQ1qZfNi4xvypECzXU_tEu\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum application amount is Rs. 500, and subsequent purchases must be in multiples of Rs. 500.",
+    "cited": {
+     "doc_id": "hdfc-elss-tax-saver-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SILVER-MIN-APPLICATION-01",
+    "question": "What is the minimum investment amount for HDFC Silver ETF Fund of Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl",
+    "footer": "21 Nov 2025",
+    "text": "The minimum investment amount is Rs. 100 and any amount thereafter.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum investment amount is Rs. 100 and any amount thereafter.",
+    "cited": {
+     "doc_id": "hdfc-silver-etf-fof-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-MIDCAP-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC Mid Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd",
+    "footer": "21 Nov 2025",
+    "text": "The fund manager is Chirag Setalvad.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Mid%20Cap%20Fund%20dated%20November%2021%2C%202025_1.pdf?VersionId=5ke.0bxESSJqrR9SDWhqN9DY_lIIzARd\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The fund manager is Chirag Setalvad.",
+    "cited": {
+     "doc_id": "hdfc-mid-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC Small Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=rbTT75dVxfveqoJCi245Uk3DVf_hTzal",
+    "footer": "21 Nov 2025",
+    "text": "Chirag Setalvad is the fund manager of HDFC Small Cap Fund.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Small%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=rbTT75dVxfveqoJCi245Uk3DVf_hTzal\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "Chirag Setalvad is the fund manager of HDFC Small Cap Fund.",
+    "cited": {
+     "doc_id": "hdfc-small-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-LARGECAP-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC Large Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq",
+    "footer": "21 Nov 2025",
+    "text": "The fund manager of HDFC Large Cap Fund is Rahul Baijal.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The fund manager of HDFC Large Cap Fund is Rahul Baijal.",
+    "cited": {
+     "doc_id": "hdfc-large-cap-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-MULTICAP-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC Multi Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "Amar Kalkundrikar\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "Amar Kalkundrikar",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC ELSS Tax Saver Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "Amar Kalkundrikar\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "Amar Kalkundrikar",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SILVER-FUND-MANAGER-01",
+    "question": "Who is the fund manager of HDFC Silver ETF Fund of Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The fund manager is Nandita Menezes.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The fund manager is Nandita Menezes.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-LOCK-IN-01",
+    "question": "What is the lock-in period of HDFC ELSS Tax Saver Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The lock-in period is 3 years from the date of allotment of the respective units.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The lock-in period is 3 years from the date of allotment of the respective units.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-MIDCAP-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC Mid Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount is Rs. 100.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount is Rs. 100.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SMALLCAP-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC Small Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount is Rs. 100.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount is Rs. 100.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-LARGECAP-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC Large Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount for HDFC Large Cap Fund is Rs 100.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount for HDFC Large Cap Fund is Rs 100.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-MULTICAP-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC Multi Cap Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount is Rs. 100.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount is Rs. 100.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-ELSS-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC ELSS Tax Saver Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount for HDFC ELSS Tax Saver Fund is Rs. 500.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount for HDFC ELSS Tax Saver Fund is Rs. 500.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-SILVER-MIN-SIP-01",
+    "question": "What is the minimum SIP amount for HDFC Silver ETF Fund of Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0",
+    "footer": "30 Jun 2026",
+    "text": "The minimum SIP amount is Rs. 100.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/SAI%20with%20updated%20Addendum%20dated%20September%2030%2C%202026_0.pdf?VersionId=lfGf17WvPBngQbX0cgJI7tzWW_z3AcG0\nLast updated from sources: 30 Jun 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum SIP amount is Rs. 100.",
+    "cited": {
+     "doc_id": "hdfc-sai",
+     "type": "sai",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-GEN-ELSS-LOCKIN-01",
+    "question": "What is the lock-in period for ELSS funds?",
+    "kind": "answer",
+    "url": "https://investor.sebi.gov.in/elss.html",
+    "footer": "27 Oct 2026",
+    "text": "ELSS funds have a lock-in period of three years.\n\nSource: https://investor.sebi.gov.in/elss.html\nLast updated from sources: 27 Oct 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "ELSS funds have a lock-in period of three years.",
+    "cited": {
+     "doc_id": "sebi-elss",
+     "type": "sebi_education",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-VAR-OLDNAME-LARGECAP-01",
+    "question": "What is the exit load of HDFC Top 100 Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load applies after 1 year.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load applies after 1 year.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-VAR-OLDNAME-MIDCAP-01",
+    "question": "Benchmark of HDFC Mid-Cap Opportunities Fund?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The benchmark is NIFTY MIDCAP 150 (TRI).\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The benchmark is NIFTY MIDCAP 150 (TRI).",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-VAR-OLDNAME-ELSS-01",
+    "question": "What is the lock-in for HDFC TaxSaver?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The scheme has a statutory lock‑in period of 3 years from the date of allotment of the units.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The scheme has a statutory lock‑in period of 3 years from the date of allotment of the units.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-VAR-TYPO-SMALLCAP-01",
+    "question": "hdfc smal cap expense ratio direct",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The Direct plan expense ratio is 0.76%.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The Direct plan expense ratio is 0.76%.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-VAR-ABBR-SILVER-01",
+    "question": "HDFC silver FoF exit load?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl",
+    "footer": "21 Nov 2025",
+    "text": "An exit load of 1% is payable if units are redeemed or switched out within 15 days of allotment; no exit load applies on or after 15 days.\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Silver%20ETF%20Fund%20of%20Fund%20dated%20November%2021%2C%202025.pdf?VersionId=viLSWSYPCVqevnAUTrYm2CPLHQ.J5xkl\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "An exit load of 1% is payable if units are redeemed or switched out within 15 days of allotment; no exit load applies on or after 15 days.",
+    "cited": {
+     "doc_id": "hdfc-silver-etf-fof-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   },
+   {
+    "id": "F-VAR-HINGLISH-SMALLCAP-01",
+    "question": "HDFC small cap ka exit load kya hai?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw",
+    "footer": "30 Sep 2026",
+    "text": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load applies after 1 year.\n\nSource: https://files.hdfcfund.com/s3fs-public/2026-10/HDFC%20MF%20Factsheet%20-%20September%202026.pdf?VersionId=xjdQxQp4UEchOirw4TsCE9jEGenOREzw\nLast updated from sources: 30 Sep 2026",
+    "problems": [],
+    "result": "correct",
+    "answer": "The exit load is 1.00% if units are redeemed or switched out within 1 year from the date of allotment, and no exit load applies after 1 year.",
+    "cited": {
+     "doc_id": "hdfc-factsheet",
+     "type": "factsheet",
+     "kind": "fact_card"
+    }
+   },
+   {
+    "id": "F-VAR-HINGLISH-ELSS-01",
+    "question": "HDFC ELSS mein minimum kitna invest karna padta hai?",
+    "kind": "answer",
+    "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025.pdf?VersionId=DungYvv2dhOQ1qZfNi4xvypECzXU_tEu",
+    "footer": "21 Nov 2025",
+    "text": "The minimum amount to invest in HDFC ELSS Tax Saver Fund is Rs. 500 (in multiples of Rs. 500).\n\nSource: https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20ELSS%20Tax%20Saver%20dated%20November%2021%2C%202025.pdf?VersionId=DungYvv2dhOQ1qZfNi4xvypECzXU_tEu\nLast updated from sources: 21 Nov 2025",
+    "problems": [],
+    "result": "correct",
+    "answer": "The minimum amount to invest in HDFC ELSS Tax Saver Fund is Rs. 500 (in multiples of Rs. 500).",
+    "cited": {
+     "doc_id": "hdfc-elss-tax-saver-sid",
+     "type": "sid",
+     "kind": "text"
+    }
+   }
+  ]
+ ]
+}
